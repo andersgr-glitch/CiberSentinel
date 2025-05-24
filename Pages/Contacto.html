@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="../Images/logo.png" alt="logo web">
+                    </div>
+                    <div class="company-name">CiberSentinel</div>
+                </div>
+                
+                <nav>
+                    <ul id="navMenu">
+                        <li><a href="../Index.html">Inicio</a></li>
+                        <li><a href="Quienes-Somos.html">Quiénes Somos</a></li>
+                        <li><a href="Servicios.html">Servicios</a></li>
+                        <li><a href="Contacto.html" class="active">Contacto</a></li>
+                        <li><a href="Soporte.html">Soporte</a></li>
+                    </ul>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Contact Hero Section -->
+            <section class="contact-hero">
+                <h1>Contáctanos</h1>
+                <p>¿Necesitas proteger tu empresa contra amenazas cibernéticas? Nuestro equipo de expertos está listo para ayudarte. Obtén una consulta gratuita y personalizada.</p>
+            </section>
+
+            <!-- Contact Methods Section -->
+            <section class="contact-methods">
+                <div class="methods-grid">
+                    <div class="method-card urgent">
+                        <div class="method-icon">🚨</div>
+                        <h3>Emergencias de Seguridad</h3>
+                        <p>Respuesta inmediata 24/7 para incidentes críticos</p>
+                        <a href="tel:+57-1-800-CYBER" class="contact-link urgent-link">+57 1 800 CYBER</a>
+                        <span class="availability">Disponible 24/7</span>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon">📞</div>
+                        <h3>Línea Comercial</h3>
+                        <p>Para consultas, cotizaciones y información general</p>
+                        <a href="tel:+57-1-234-5678" class="contact-link">+57 1 234 5678</a>
+                        <span class="availability">Lun-Vie 8:00-18:00</span>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon">✉️</div>
+                        <h3>Correo Electrónico</h3>
+                        <p>Respuesta garantizada en menos de 4 horas</p>
+                        <a href="mailto:info@cibersentinel.com.co" class="contact-link">info@cibersentinel.com.co</a>
+                        <span class="availability">Respuesta < 4 horas</span>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon">💬</div>
+                        <h3>Chat en Vivo</h3>
+                        <p>Consulta instantánea con nuestros especialistas</p>
+                        <button class="contact-link chat-button" onclick="openChat()">Iniciar Chat</button>
+                        <span class="availability">Lun-Vie 8:00-20:00</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section class="contact-form-section">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Solicita tu Consulta Gratuita</h2>
+                        <p>Completa el formulario y uno de nuestros expertos se comunicará contigo dentro de las próximas 2 horas hábiles.</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cargo">Cargo</label>
+                                <input type="text" id="cargo" name="cargo" placeholder="Ej: Gerente IT, CEO">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="empresa">Empresa *</label>
+                                <input type="text" id="empresa" name="empresa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sector">Sector</label>
+                                <select id="sector" name="sector">
+                                    <option value="">Selecciona tu sector</option>
+                                    <option value="financiero">Financiero</option>
+                                    <option value="salud">Salud</option>
+                                    <option value="gobierno">Gobierno</option>
+                                    <option value="educacion">Educación</option>
+                                    <option value="retail">Retail/Comercio</option>
+                                    <option value="manufactura">Manufactura</option>
+                                    <option value="tecnologia">Tecnología</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefono">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+57 300 123 4567" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interés</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">¿En qué podemos ayudarte?</option>
+                                <option value="auditoria">Auditoría de Seguridad</option>
+                                <option value="pentesting">Pentesting</option>
+                                <option value="soc">Centro de Operaciones de Seguridad (SOC)</option>
+                                <option value="consultoria">Consultoría en Ciberseguridad</option>
+                                <option value="capacitacion">Capacitación de Personal</option>
+                                <option value="cumplimiento">Cumplimiento Normativo</option>
+                                <option value="respuesta-incidentes">Respuesta a Incidentes</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgencia">Nivel de Urgencia</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="urgencia" value="baja" checked>
+                                    <span class="radio-custom"></span>
+                                    No es urgente (1-2 semanas)
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="urgencia" value="media">
+                                    <span class="radio-custom"></span>
+                                    Moderada (Esta semana)
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="urgencia" value="alta">
+                                    <span class="radio-custom"></span>
+                                    Urgente (1-2 días)
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="urgencia" value="critica">
+                                    <span class="radio-custom"></span>
+                                    Crítica (Inmediato)
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe brevemente tu situación o necesidades específicas..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="acepto" name="acepto" required>
+                                <span class="checkbox-custom"></span>
+                                Acepto el tratamiento de mis datos personales según la <a href="#" class="policy-link">Política de Privacidad</a> *
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkbox-custom"></span>
+                                Deseo recibir información sobre amenazas cibernéticas y mejores prácticas de seguridad
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span>Enviar Solicitud</span>
+                            <div class="button-icon">🚀</div>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Office Information -->
+            <section class="office-info">
+                <div class="office-grid">
+                    <div class="office-card main">
+                        <h3>Oficina Principal - Bogotá</h3>
+                        <div class="office-details">
+                            <p><span class="detail-icon">📍</span> Carrera 7 #71-21, Torre A, Piso 12<br>Zona Rosa, Bogotá D.C.</p>
+                            <p><span class="detail-icon">🕒</span> Lun-Vie: 8:00-18:00<br>Sáb: 9:00-13:00</p>
+                            <p><span class="detail-icon">🚗</span> Parqueadero disponible<br>Estación TransMilenio: Calle 72</p>
+                        </div>
+                        <button class="location-button" onclick="openMap('bogota')">Ver en Mapa</button>
+                    </div>
+
+                    <div class="office-card">
+                        <h3>Oficina Medellín</h3>
+                        <div class="office-details">
+                            <p><span class="detail-icon">📍</span> Carrera 43A #14-50<br>El Poblado, Medellín</p>
+                            <p><span class="detail-icon">🕒</span> Lun-Vie: 8:00-17:00</p>
+                        </div>
+                        <button class="location-button" onclick="openMap('medellin')">Ver en Mapa</button>
+                    </div>
+
+                    <div class="office-card">
+                        <h3>Oficina Cali</h3>
+                        <div class="office-details">
+                            <p><span class="detail-icon">📍</span> Avenida 6N #28N-102<br>Granada Norte, Cali</p>
+                            <p><span class="detail-icon">🕒</span> Lun-Vie: 8:00-17:00</p>
+                        </div>
+                        <button class="location-button" onclick="openMap('cali')">Ver en Mapa</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Cuánto tiempo toma una evaluación inicial de seguridad?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Una evaluación inicial básica toma entre 2-5 días hábiles, dependiendo del tamaño de tu organización. Para evaluaciones más profundas, el tiempo puede extenderse a 1-2 semanas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Ofrecen servicios para pequeñas empresas?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, tenemos paquetes especialmente diseñados para PYMES. Entendemos que cada empresa tiene necesidades y presupuestos diferentes, por lo que ofrecemos soluciones escalables.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Qué sucede si tengo un incidente de seguridad?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Contamos con un equipo de respuesta a incidentes disponible 24/7. Llama inmediatamente a nuestra línea de emergencias +57 1 800 CYBER y te conectaremos con un especialista en menos de 5 minutos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Cumplen con las regulaciones colombianas?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutamente. Estamos certificados y cumplimos con todas las regulaciones locales, incluyendo la Ley de Protección de Datos (Ley 1581 de 2012) y las directrices de la SIC y MinTIC.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CiberSentinel</h3>
+                    <p>Protegemos tu negocio contra amenazas digitales con soluciones adaptadas al mercado colombiano. Tu seguridad es nuestra prioridad.</p>
+                    <div class="social-links">
+                        <a href="#" title="LinkedIn">💼</a>
+                        <a href="#" title="Twitter">🐦</a>
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <a href="../Index.html">Inicio</a>
+                    <a href="Quienes-Somos.html">Quiénes Somos</a>
+                    <a href="Servicios.html">Servicios</a>
+                    <a href="Contacto.html">Contacto</a>
+                    <a href="Soporte.html">Soporte</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Carrera 7 #71-21, Torre A, Piso 12, Bogotá D.C.</p>
+                    <p>📞 +57 1 234 5678</p>
+                    <p>🚨 Emergencias: +57 1 800 CYBER</p>
+                    <p>✉️ info@cibersentinel.com.co</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Certificaciones</h3>
+                    <p>🛡️ ISO 27001:2013</p>
+                    <p>🔒 SOC 2 Type II</p>
+                    <p>🇨🇴 Registro MinTIC</p>
+                    <p>⚖️ Cumplimiento Ley 1581</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CiberSentinel. Todos los derechos reservados. | Protegiendo Colombia desde 2019</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Script para menú responsive
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <title>CiberSentinel</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="Images/logo.png" alt="logo web">
+                    </div>
+                    <div class="company-name">CiberSentinel</div>
+                </div>
+                
+                <nav>
+                    <ul id="navMenu">
+                        <li><a href="Index.html" class="active">Inicio</a></li>
+                        <li><a href="Pages/Quienes-Somos.html">Quiénes Somos</a></li>
+                        <li><a href="Pages/Servicios.html">Servicios</a></li>
+                        <li><a href="Pages/Contacto.html">Contacto</a></li>
+                        <li><a href="Pages/Soporte.html">Soporte</a></li>
+                    </ul>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1>Bienvenido a CiberSentinel</h1>
+                <p>Expertos en proteger tu negocio contra amenazas digitales con soluciones adaptadas al mercado colombiano. Contáctanos para una evaluación gratuita y fortalece tu defensa cibernética hoy.</p>
+                <a href="Pages/Servicios.html" class="cta-button">Conoce Nuestros Servicios</a>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <div class="container">
+                    <h2 style="text-align: center; color: white; font-size: 2.5rem; margin-bottom: 1rem;">¿Por Qué Elegirnos?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🚀</div>
+                            <h3>Innovación</h3>
+                            <p>Utilizamos las últimas tecnologías para brindarte soluciones de vanguardia</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💎</div>
+                            <h3>Calidad</h3>
+                            <p>Nuestro compromiso es ofrecer productos y servicios de la más alta calidad</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🤝</div>
+                            <h3>Confianza</h3>
+                            <p>Miles de clientes satisfechos respaldan nuestro trabajo y dedicación</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mi Empresa</h3>
+                    <p>Somos una empresa comprometida con la excelencia y la innovación, brindando soluciones de calidad para nuestros clientes.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Twitter">🐦</a>
+                        <a href="#" title="LinkedIn">💼</a>
+                        <a href="#" title="Instagram">📷</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <a href="Index.html">Inicio</a>
+                    <a href="Pages/Quienes-Somos.html">Quiénes Somos</a>
+                    <a href="Paginas/Servicios.html">Servicios</a>
+                    <a href="Paginas/Contacto.html">Contacto</a>
+                    <a href="Paginas/Soporte.html">Soporte</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Dirección: Calle Principal 123, Ciudad</p>
+                    <p>📞 Teléfono: +1 (555) 123-4567</p>
+                    <p>✉️ Email: info@miempresa.com</p>
+                    <p>🕒 Horario: Lun-Vie 9:00-18:00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir nuestras últimas noticias y ofertas especiales.</p>
+                    <div style="margin-top: 1rem;">
+                        <input type="email" placeholder="Tu email" style="padding: 0.5rem; border: none; border-radius: 5px; margin-right: 0.5rem; width: 200px;">
+                        <button style="padding: 0.5rem 1rem; background: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer;">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mi Empresa. Todos los derechos reservados. | Diseñado con ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para menú responsive
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
